@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tasbeeh application</title>
+</head>
+<body style="background: black;">
+    
+    <p style="color:yellow;text-align:center;font-size:50px;">Write the name here what you want to recite:</p>
+    <table border="0" align="center">
+        <tr><td>
+    <input type="text" id="a1" style="height:100px;width:600px;align:center;font-size:50px;color:gray;text-align:center;background:rgb(0,255,255);"><br><br>
+    </td></tr></table>
+    <br><hr><hr><hr><br><br><br><br><br>
+ <table border="0" align="center" width="800px">
+     <tr>
+         <th></th>
+         <th>
+             <div style="text-align:right;">
+              <marquee behavior="scroll" direction="left" scrollamount="30px">   
+                 <input type="text" id="n3" disabled style="background:black;height:50px;border:0;color:skyblue; width:600px;text-align:center;font-size:30px;"></div>
+           </marquee>
+         </th>
+     </tr>
+     <tr>
+      <th colspan="2">         
+           <div style="text-align:center;"><input type="text" value="0" id="n2" disabled style="background:white;height:100px; width:800px;text-align:center;font-size:50px;"></div>
+           </th>
+          </tr>
+          <tr style="width:800px;height:150px;">                  
+          <th> 
+               <div style="text-align:left;"</div>          
+           </th>
+           <th>
+          <div style="text-align:right;"> <button onclick="function3()" style="background:red;color:white;height:100px;width:300px;font-size:50px;">reset</button></div></th></tr>
+          <tr>
+              <th colspan="2">
+<br><br>
+             <div style="text-align:center;"><button  onclick="function2();function4()" style="background:blue;color:white;height:150px;width:400px;font-size:80px;">count</button></div>
+   </th></tr></table>
+<div id="n1"></div>
+
+<script>
+   function insertHTML(html){
+    document.getElementById('n1').innerHTML=html;
+    }
+</script>
+<script>
+    function function5(){
+     insertHTML(`
+    <style>
+        input{
+          background:rgb(155,0,155);
+           color:white;
+        font-size:40px;
+           width:700px;                  height:50px;
+        }
+    </style>
+    <br><br><br>
+    <h1 style="color:red"><i>TASBEEH LIST:</i></h1>
+    <table border="0">
+<tr>
+<td><input type="text" id="1"></td>
+</tr>
+<tr>
+<td><input type="text" id="2"></td>
+</tr>
+<tr>
+<td><input type="text" id="3"></td>
+</tr>
+<tr>
+<td><input type="text" id="4"></td>
+</tr>
+<tr>
+<td><input type="text" id="5"></td>
+</tr>
+<tr>
+<td><input type="text" id="6"></td>
+</tr>   
+         `)   
+    }
+   
+  </script>
+<script>
+    function function2(){
+      document.getElementById('n2').value-=-1 ;
+    }
+    
+    function function3(){
+    document.getElementById('n2').value="" ;
+    }
+
+    function function4(){
+    document.getElementById('n3').value=document.getElementById('a1').value
+    }
+</script>
+
+
+
+
+<script>
+  function function6(){
+      document.getElementById('i1')=document.write('Subhanallah-'); 
+       } 
+</script>
+
+
+
+</body>
+</html>
